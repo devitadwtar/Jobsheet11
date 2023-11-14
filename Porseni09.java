@@ -13,6 +13,7 @@ public class Porseni09 {
         System.out.println( " =========================================");
         String[] cabor1 = {"Badminton", "Tenis Meja", "Basket", "Sepak Bola", "Voly"};
         int[] NamaAtlet = {5, 5, 5, 5, 5};
+        int[] Nomor = {1, 2, 3, 4, 5};
 
         String[][] cabor = new String[5][];
         for (int i = 0; i < cabor.length; i++) {
@@ -37,7 +38,7 @@ public class Porseni09 {
         for (int i = 0; i < cabor.length; i++) {
             System.out.println("Cabang Olahraga " + cabor1[i]);
             for (int j = 0; j < cabor[i].length; j++) {
-                System.out.println(cabor[i][j]);
+                System.out.printf("%-2d%s\n", Nomor[j], cabor[i][j]);
             }
             System.out.println();
         }
